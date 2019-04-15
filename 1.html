@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+<body>
+<script>
+
+    //Задача 1: Предложить пользователю ввести название месяца. Вывести пору года, которой он принадлежит.
+    // Использовать оператор switch.
+
+    "use strict";
+
+    var month = prompt('Ввведите название месяца, с большой буквы');
+    switch (month) {
+        case 'Декабрь':
+        case 'Январь':
+        case 'Февраль':
+            alert('Зима');
+            break;
+        case 'Март':
+        case 'Апрель':
+        case 'Май':
+            alert('Весна');
+            break;
+        case 'Июнь':
+        case 'Июль':
+        case 'Август':
+            alert('Лето');
+            break;
+        case 'Сентябрь':
+        case 'Октябрь':
+        case 'Ноябрь':
+            alert('Осень');
+            break;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+</head>
+<body>
+<script>
+    /*Задача 2*:
+    Предложить пользователю ввести 2 числа A и B. Написать функцию подсчета суммы чисел из диапазона A..B.
+      Если B меньше A вывести ошибку.*/
+
+    "use strict";
+
+    var a = Number(prompt('Введите число A',''));
+    var b = Number(prompt('Введите число B',''));
+
+
+    function summa(a,b) {
+        if(b < a){
+            alert("error");
+        } else {
+            var sum = 0;
+            for(var c = a;c <= b; c++){
+                sum = sum + c;
+            }
+            alert(sum)
+        }
+    }
+    summa(a,b)
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>anketa</title>
+</head>
+<body>
+<script>
+
+    //Домашнее задание ANKETA
+
+    "use strict";
+
+    var surName = prompt('Ваша фамилия','');
+
+   while (!surName){
+       surName = prompt('Ваша фамилия','');
+   }
+
+    var name = prompt('Ваше имя','');
+
+    while (!name){
+        name = prompt('Ваша фамилия','');
+    }
+
+    var lastName = prompt('Ваше отчество','');
+
+    while (!lastName){
+        lastName = prompt('Ваша фамилия','');
+    }
+
+    var fullName = (surName+' '+name+' '+lastName);
+
+    var age = prompt('Ваш возраст в годах','');
+
+    while (Number(age) != age){
+        age = prompt('Ваш возраст в годах','');
+    }
+
+    var ageDay = (age*366);
+
+    var ageFive = parseInt(age)+5;
+
+    if(confirm('Ваш пол мужской?')){
+        var gM = 'Мужской';
+        var gender = gM;
+    } else
+        var gF = 'Женский';
+    var gender = gF;
+
+    var old ;
+
+    if ((age>=65)&&(gender=gM)){
+        old = 'да';
+    } else if ((age<65)&&(gender=gM)){
+        old = 'нет'
+    } else if ((age>=55)&&(gender=gF)){
+        old = 'да';
+    } else if ((age<55)&&(gender=gF)){
+        old='нет';
+    }
+
+    alert('Ваше ФИО: '+fullName+'\nваш возраст в годах: '+age+'\nваш возраст в днях: '+ageDay+'\nчерез 5 лет вам будет '+ageFive+
+        '\nваш пол: '+gender+'\nвы на пенсии: '+old);
+
+</script>
+</body>
+</html>
